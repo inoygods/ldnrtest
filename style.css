@@ -3,65 +3,52 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('assets/background.jpg');
+    background-image: url('assets/background.jpg'); /* Фон будет взят с вашего фото */
     background-size: cover;
+    background-position: center;
     color: white;
 }
 
 /* Верхнее меню */
 header {
-    background-color: rgba(0, 0, 0, 0.7);
     padding: 20px 0;
-    position: relative;
+    text-align: center;
 }
 
 /* Логотип */
 .menu .logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
     width: 150px; /* Размер логотипа */
     height: auto;
 }
 
-/* Кнопка меню */
-#menuBtn {
-    background-color: #007bff;
-    color: white;
-    font-size: 1em;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-
-#menuBtn:hover {
-    background-color: #0056b3;
-}
-
 /* Стиль для анкет */
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
 .profile-card {
-    display: inline-block;
     background-color: rgba(0, 0, 0, 0.7);
-    margin: 20px;
+    margin: 10px;
     padding: 20px;
     border-radius: 10px;
-    max-width: 250px;
-    text-align: center;
+    width: 45%; /* 2 анкеты в ряд */
+    border: 2px solid #007bff; /* Обрисовка анкет */
 }
 
 .profile-card img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
     border-radius: 10px;
 }
 
 .profile-info {
     padding-top: 10px;
+    text-align: center;
 }
 
 .telegram-btn {
@@ -77,64 +64,12 @@ header {
     background-color: #0056b3;
 }
 
-/* Меню */
-.menu-dropdown {
-    display: none;
-    position: absolute;
-    top: 50px;
-    left: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.menu-dropdown ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.menu-dropdown ul li {
-    margin: 10px 0;
-}
-
-.menu-dropdown ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.menu-dropdown ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Регистрация */
-form {
+/* Связь с нами */
+#contact {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
-    border-radius: 10px;
-    width: 300px;
-    margin: 0 auto;
-}
-
-input[type="email"], input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    background-color: #333;
-    color: white;
-    border: 1px solid #555;
-    border-radius: 5px;
-}
-
-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
+    text-align: center;
+    margin-top: 40px;
 }
 
 /* Стили для футера */
