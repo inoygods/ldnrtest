@@ -3,23 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Анкеты людей</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Наш сайт</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <!-- Верхнее меню -->
     <header>
         <div class="menu">
-            <button id="menuBtn" class="btn">Меню</button>
-            <button id="aboutBtn" class="btn">О нас</button>
+            <button id="menuBtn">Меню</button>
+            <button id="aboutBtn">О нас</button>
         </div>
-        <h1>Наш сайт</h1>
+        <h1>Название сайта</h1>
     </header>
 
-    <!-- Модальное окно "О нас" -->
+    <!-- О нас (модальное окно) -->
     <div id="aboutModal" class="modal">
         <div class="modal-content">
-            <span id="closeBtn" class="close">&times;</span>
+            <span class="close">&times;</span>
             <h2>О нас</h2>
             <p>Мы создаем анкеты для людей с фото и информацией. Наш сайт предназначен для хранения анкет пользователей, и каждый пользователь может добавить свою анкету.</p>
         </div>
@@ -27,68 +26,36 @@
 
     <!-- Анкеты -->
     <section id="profiles">
-        <div class="container">
-            <h2>Наши анкеты</h2>
-            <div class="profile-card">
-                <img src="profile1.jpg" alt="Фото 1">
-                <div class="profile-info">
-                    <h3>Иван Иванов</h3>
-                    <p>Возраст: 30 лет</p>
-                    <p>Город: Москва</p>
-                    <p>Телефон: +7 123 456 78 90</p>
-                    <a href="https://t.me/ivan_telegram" target="_blank" class="telegram-btn">Связаться в Telegram</a>
-                </div>
+        <div class="profile-card">
+            <img src="assets/photo1.jpg" alt="Фото 1">
+            <div class="profile-info">
+                <h3>Иван Иванов</h3>
+                <p>Возраст: 30</p>
+                <p>Город: Москва</p>
+                <a href="https://t.me/ivan_ivanov" class="telegram-btn">Связаться в Telegram</a>
             </div>
-            <div class="profile-card">
-                <img src="profile2.jpg" alt="Фото 2">
-                <div class="profile-info">
-                    <h3>Мария Петрова</h3>
-                    <p>Возраст: 28 лет</p>
-                    <p>Город: Санкт-Петербург</p>
-                    <p>Телефон: +7 987 654 32 10</p>
-                    <a href="https://t.me/maria_telegram" target="_blank" class="telegram-btn">Связаться в Telegram</a>
-                </div>
+        </div>
+        <div class="profile-card">
+            <img src="assets/photo2.jpg" alt="Фото 2">
+            <div class="profile-info">
+                <h3>Мария Петрова</h3>
+                <p>Возраст: 28</p>
+                <p>Город: Санкт-Петербург</p>
+                <a href="https://t.me/maria_pet" class="telegram-btn">Связаться в Telegram</a>
             </div>
         </div>
     </section>
 
     <!-- Связь с нами -->
     <section id="contact">
-        <div class="container">
-            <h2>Связаться с нами</h2>
-            <p>Если у вас есть вопросы, пишите нам в <a href="https://t.me/ваш_телеграм" target="_blank">Telegram</a>.</p>
-        </div>
+        <p>Свяжитесь с нами через <a href="https://t.me/our_site_support">Телеграм</a>.</p>
     </section>
 
-    <!-- Футер -->
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Наш сайт. Все права защищены.</p>
-        </div>
+        <p>&copy; 2024 Наш сайт. Все права защищены.</p>
     </footer>
 
-    <script>
-        // Получаем элементы
-        const aboutBtn = document.getElementById('aboutBtn');
-        const aboutModal = document.getElementById('aboutModal');
-        const closeBtn = document.getElementById('closeBtn');
-
-        // Открытие модального окна при клике на "О нас"
-        aboutBtn.addEventListener('click', function() {
-            aboutModal.style.display = 'block';
-        });
-
-        // Закрытие модального окна при клике на крестик
-        closeBtn.addEventListener('click', function() {
-            aboutModal.style.display = 'none';
-        });
-
-        // Закрытие модального окна при клике вне окна
-        window.addEventListener('click', function(event) {
-            if (event.target === aboutModal) {
-                aboutModal.style.display = 'none';
-            }
-        });
-    </script>
+    <script src="assets/script.js"></script>
 </body>
 </html>
