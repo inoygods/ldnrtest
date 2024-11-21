@@ -3,9 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('assets/background.jpg'); /* Фон */
-    background-size: cover;
-    background-position: center;
+    background-color: #000; /* Черный фон */
     color: white;
 }
 
@@ -17,7 +15,7 @@ header {
 
 /* Логотип */
 .logo {
-    width: 120px; /* Уменьшил размер логотипа */
+    width: 100px; /* Уменьшил размер логотипа */
     height: auto;
 }
 
@@ -63,6 +61,7 @@ header {
     border-radius: 10px;
     width: 48%; /* 2 анкеты в ряд */
     border: 2px solid #007bff; /* Обрисовка анкет */
+    box-sizing: border-box; /* Учет отступов при ширине */
 }
 
 .profile-card img {
