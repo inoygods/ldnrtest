@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Верхнее меню -->
     <header>
-        <div class="header-container">
+        <div class="menu">
+            <button id="menuBtn" class="btn">Меню</button>
             <button id="aboutBtn" class="btn">О нас</button>
         </div>
+        <h1>Наш сайт</h1>
     </header>
 
     <!-- Информация "О нас", скрыта по умолчанию -->
@@ -21,6 +24,7 @@
         </div>
     </section>
 
+    <!-- Анкеты -->
     <section id="profiles">
         <div class="container">
             <h2>Наши анкеты</h2>
@@ -47,6 +51,15 @@
         </div>
     </section>
 
+    <!-- Связь с нами -->
+    <section id="contact">
+        <div class="container">
+            <h2>Связаться с нами</h2>
+            <p>Если у вас есть вопросы, пишите нам в <a href="https://t.me/ваш_телеграм" target="_blank">Telegram</a>.</p>
+        </div>
+    </section>
+
+    <!-- Футер -->
     <footer>
         <div class="container">
             <p>&copy; 2024 Наш сайт. Все права защищены.</p>
@@ -55,8 +68,18 @@
 
     <script>
         // Скрипт для показа и скрытия секции "О нас"
-        document.getElementById('aboutBtn').addEventListener('click', function() {
-            document.getElementById('about').classList.toggle('hidden');
+        const aboutSection = document.getElementById('about');
+        const aboutBtn = document.getElementById('aboutBtn');
+
+        aboutBtn.addEventListener('click', function() {
+            aboutSection.classList.toggle('hidden');
+        });
+
+        // Закрытие секции "О нас" при прокрутке страницы
+        window.addEventListener('scroll', function() {
+            if (!aboutSection.classList.contains('hidden')) {
+                aboutSection.classList.add('hidden');
+            }
         });
     </script>
 </body>
