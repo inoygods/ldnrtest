@@ -16,13 +16,14 @@
         <h1>Наш сайт</h1>
     </header>
 
-    <!-- Информация "О нас", скрыта по умолчанию -->
-    <section id="about" class="hidden">
-        <div class="container">
+    <!-- Модальное окно "О нас" -->
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span id="closeBtn" class="close">&times;</span>
             <h2>О нас</h2>
             <p>Мы создаем анкеты для людей с фото и информацией. Наш сайт предназначен для хранения анкет пользователей, и каждый пользователь может добавить свою анкету.</p>
         </div>
-    </section>
+    </div>
 
     <!-- Анкеты -->
     <section id="profiles">
@@ -67,18 +68,25 @@
     </footer>
 
     <script>
-        // Скрипт для показа и скрытия секции "О нас"
-        const aboutSection = document.getElementById('about');
+        // Получаем элементы
         const aboutBtn = document.getElementById('aboutBtn');
+        const aboutModal = document.getElementById('aboutModal');
+        const closeBtn = document.getElementById('closeBtn');
 
+        // Открытие модального окна при клике на "О нас"
         aboutBtn.addEventListener('click', function() {
-            aboutSection.classList.toggle('hidden');
+            aboutModal.style.display = 'block';
         });
 
-        // Закрытие секции "О нас" при прокрутке страницы
-        window.addEventListener('scroll', function() {
-            if (!aboutSection.classList.contains('hidden')) {
-                aboutSection.classList.add('hidden');
+        // Закрытие модального окна при клике на крестик
+        closeBtn.addEventListener('click', function() {
+            aboutModal.style.display = 'none';
+        });
+
+        // Закрытие модального окна при клике вне окна
+        window.addEventListener('click', function(event) {
+            if (event.target === aboutModal) {
+                aboutModal.style.display = 'none';
             }
         });
     </script>
