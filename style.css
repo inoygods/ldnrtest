@@ -8,30 +8,39 @@ body {
     box-sizing: border-box;
 }
 
-/* Стили для хедера */
+/* Верхнее меню */
 header {
     background-color: #333;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
+    position: relative;
 }
 
-.header-container {
-    display: flex;
-    justify-content: center;
+.menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
-#aboutBtn {
+#menuBtn, #aboutBtn {
     background-color: #007bff;
     color: white;
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-right: 10px;
 }
 
-#aboutBtn:hover {
+#menuBtn:hover, #aboutBtn:hover {
     background-color: #0056b3;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: white;
 }
 
 /* Стили для секции "О нас" */
@@ -108,6 +117,23 @@ header {
 
 .telegram-btn:hover {
     background-color: #0056b3;
+}
+
+/* Стили для секции "Связаться с нами" */
+#contact {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #222;
+}
+
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
 }
 
 /* Стили для футера */
