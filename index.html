@@ -8,64 +8,35 @@
 </head>
 <body>
     <header>
-        <div class="menu">
-            <!-- Кнопка меню -->
-            <button id="menuBtn">Меню</button>
-            <!-- Логотип вместо текста -->
-            <img src="assets/logo.png" alt="Логотип сайта" class="logo">
-        </div>
+        <!-- Логотип вместо текста -->
+        <img src="assets/logo.png" alt="Логотип сайта" class="logo">
     </header>
-
-    <!-- Меню -->
-    <div id="menuDropdown" class="menu-dropdown">
-        <ul>
-            <li><a href="#profiles">Анкеты</a></li>
-            <li><a href="#chat-list">Чаты и Каналы</a></li>
-            <li><a href="#contact">Связь с нами</a></li>
-            <li><a href="#about">О нас</a></li>
-        </ul>
-    </div>
 
     <!-- Анкеты -->
     <section id="profiles">
         <h2>Анкеты</h2>
-        <div class="profile-card">
-            <img src="assets/photo1.jpg" alt="Фото 1">
-            <div class="profile-info">
-                <h3>Иван Иванов</h3>
-                <p>Возраст: 30</p>
-                <p>Город: Москва</p>
-                <a href="https://t.me/ivan_ivanov" class="telegram-btn">Связаться в Telegram</a>
-                <p>Номер: +7 999 123 45 67</p>
+        <div class="profile-container">
+            <div class="profile-card">
+                <img src="assets/photo1.jpg" alt="Фото 1">
+                <div class="profile-info">
+                    <h3>Иван Иванов</h3>
+                    <p>Возраст: 30</p>
+                    <p>Город: Москва</p>
+                    <a href="https://t.me/ivan_ivanov" class="telegram-btn">Связаться в Telegram</a>
+                    <p>Номер: +7 999 123 45 67</p>
+                </div>
+            </div>
+            <div class="profile-card">
+                <img src="assets/photo2.jpg" alt="Фото 2">
+                <div class="profile-info">
+                    <h3>Мария Петрова</h3>
+                    <p>Возраст: 28</p>
+                    <p>Город: Санкт-Петербург</p>
+                    <a href="https://t.me/maria_pet" class="telegram-btn">Связаться в Telegram</a>
+                    <p>Номер: +7 999 234 56 78</p>
+                </div>
             </div>
         </div>
-        <div class="profile-card">
-            <img src="assets/photo2.jpg" alt="Фото 2">
-            <div class="profile-info">
-                <h3>Мария Петрова</h3>
-                <p>Возраст: 28</p>
-                <p>Город: Санкт-Петербург</p>
-                <a href="https://t.me/maria_pet" class="telegram-btn">Связаться в Telegram</a>
-                <p>Номер: +7 999 234 56 78</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Список чатов и каналов -->
-    <section id="chat-list">
-        <h2>Чаты и Каналы</h2>
-        <ul>
-            <li><a href="https://t.me/chat1">Чат 1</a></li>
-            <li><a href="https://t.me/chat2">Чат 2</a></li>
-            <li><a href="https://t.me/channel1">Канал 1</a></li>
-            <li><a href="https://t.me/channel2">Канал 2</a></li>
-        </ul>
-    </section>
-
-    <!-- О нас -->
-    <section id="about">
-        <h2>О нас</h2>
-        <p>Мы создаем анкеты для людей с фото и информацией. Наш сайт предназначен для хранения анкет пользователей, и каждый пользователь может добавить свою анкету.</p>
     </section>
 
     <!-- Связь с нами -->
