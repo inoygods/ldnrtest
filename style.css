@@ -1,18 +1,16 @@
 /* Общие стили */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: #f4f4f9;
-    color: #333;
+    box-sizing: border-box;
 }
 
-/* Заголовок и меню */
+/* Стили для хедера */
 header {
-    background: #444;
-    color: #fff;
-    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -20,78 +18,39 @@ header h1 {
     margin: 0;
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+/* Стили для секции "О нас" */
+#about {
+    background-image: url('background.jpg'); /* Путь к изображению */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
 }
 
-header nav ul li {
-    display: inline;
+#about h2 {
+    font-size: 2.5em;
 }
 
-header nav ul li a {
-    color: #fff;
+#about p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Стили для секции "Связаться с нами" */
+#contact {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+#contact a {
+    color: #007bff;
     text-decoration: none;
     font-weight: bold;
 }
 
-/* Секция с анкетами */
-#profiles {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-}
-
-.profile {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    width: 300px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.profile img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.profile h2 {
-    margin: 10px 0 5px;
-    font-size: 20px;
-}
-
-.profile p {
-    margin: 5px 0;
-}
-
-.btn {
-    display: inline-block;
-    background: #007BFF;
-    color: #fff;
-    padding: 10px 20px;
-    margin-top: 10px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-}
-
-.btn:hover {
-    background: #0056b3;
-}
-
-/* Подвал */
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #444;
-    color: #fff;
-    margin-top: 20px;
+#contact a:hover {
+    text-decoration: underline;
 }
