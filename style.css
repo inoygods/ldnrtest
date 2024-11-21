@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('assets/background.jpg'); /* Фон будет взят с вашего фото */
+    background-image: url('assets/background.jpg'); /* Фон */
     background-size: cover;
     background-position: center;
     color: white;
@@ -16,16 +16,42 @@ header {
 }
 
 /* Логотип */
-.menu .logo {
-    width: 150px; /* Размер логотипа */
+.logo {
+    width: 120px; /* Уменьшил размер логотипа */
     height: auto;
+}
+
+/* Список чатов и каналов */
+#chats {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#chats ul {
+    list-style: none;
+    padding: 0;
+}
+
+#chats ul li {
+    margin: 10px 0;
+}
+
+#chats ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#chats ul li a:hover {
+    text-decoration: underline;
 }
 
 /* Стиль для анкет */
 .profile-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 20px;
     padding: 20px;
 }
@@ -35,7 +61,7 @@ header {
     margin: 10px;
     padding: 20px;
     border-radius: 10px;
-    width: 45%; /* 2 анкеты в ряд */
+    width: 48%; /* 2 анкеты в ряд */
     border: 2px solid #007bff; /* Обрисовка анкет */
 }
 
