@@ -8,13 +8,16 @@
 </head>
 <body>
     <header>
-        <h1>Добро пожаловать на сайт анкет.</h1>
+        <div class="header-container">
+            <button id="aboutBtn" class="btn">О нас</button>
+        </div>
     </header>
 
-    <section id="about">
+    <!-- Информация "О нас", скрыта по умолчанию -->
+    <section id="about" class="hidden">
         <div class="container">
             <h2>О нас</h2>
-            <p>Мы создаем анкеты для людей с фото и информацией. Наш сайт предназначен для хранения анкет пользователей.</p>
+            <p>Мы создаем анкеты для людей с фото и информацией. Наш сайт предназначен для хранения анкет пользователей, и каждый пользователь может добавить свою анкету.</p>
         </div>
     </section>
 
@@ -24,28 +27,37 @@
             <div class="profile-card">
                 <img src="profile1.jpg" alt="Фото 1">
                 <div class="profile-info">
-                    <h3>Ростислав Иной </h3>
-                    <p>Возраст: 19 лет</p>
-                    <p>Город: Вашингтон </p>
+                    <h3>Иван Иванов</h3>
+                    <p>Возраст: 30 лет</p>
+                    <p>Город: Москва</p>
+                    <p>Телефон: +7 123 456 78 90</p>
+                    <a href="https://t.me/ivan_telegram" target="_blank" class="telegram-btn">Связаться в Telegram</a>
                 </div>
             </div>
             <div class="profile-card">
                 <img src="profile2.jpg" alt="Фото 2">
                 <div class="profile-info">
-                    <h3>Иной</h3>
-                    <p>Возраст: 19 лет</p>
+                    <h3>Мария Петрова</h3>
+                    <p>Возраст: 28 лет</p>
                     <p>Город: Санкт-Петербург</p>
+                    <p>Телефон: +7 987 654 32 10</p>
+                    <a href="https://t.me/maria_telegram" target="_blank" class="telegram-btn">Связаться в Telegram</a>
                 </div>
             </div>
-            <!-- Добавьте больше анкет по аналогии -->
         </div>
     </section>
 
-    <section id="contact">
+    <footer>
         <div class="container">
-            <h2>Связаться с нами</h2>
-            <p>Если у вас есть вопросы, пишите нам в <a href="https://t.me/inoygod" target="_blank">Telegram</a>.</p>
+            <p>&copy; 2024 Наш сайт. Все права защищены.</p>
         </div>
-    </section>
+    </footer>
+
+    <script>
+        // Скрипт для показа и скрытия секции "О нас"
+        document.getElementById('aboutBtn').addEventListener('click', function() {
+            document.getElementById('about').classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
