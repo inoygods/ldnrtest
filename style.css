@@ -43,26 +43,43 @@ h1 {
     color: white;
 }
 
-/* Стили для секции "О нас" */
-#about {
-    padding: 50px 0;
-    background-color: #222;
-    text-align: center;
+/* Модальное окно "О нас" */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 1; /* Поверх всего */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон */
 }
 
-#about h2 {
-    font-size: 2.5em;
+.modal-content {
+    background-color: #333;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    color: white;
 }
 
-#about p {
-    font-size: 1.2em;
-    max-width: 800px;
-    margin: 0 auto;
+.close {
+    color: #aaa;
+    font-size: 2em;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
 }
 
-/* Скрытая секция */
-.hidden {
-    display: none;
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* Стили для секции "Анкеты" */
