@@ -8,7 +8,7 @@ body {
     color: #333;
 }
 
-/* Заголовок и меню */
+/* Заголовок */
 header {
     background: #444;
     color: #fff;
@@ -18,24 +18,6 @@ header {
 
 header h1 {
     margin: 0;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-header nav ul li {
-    display: inline;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
 }
 
 /* Секция с анкетами */
@@ -87,6 +69,21 @@ header nav ul li a {
     background: #0056b3;
 }
 
+/* Секция "Связь с нами" */
+#contact {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+#contact h2 {
+    font-size: 24px;
+}
+
+#contact .btn {
+    margin-top: 10px;
+}
+
 /* Подвал */
 footer {
     text-align: center;
@@ -94,4 +91,8 @@ footer {
     background: #444;
     color: #fff;
     margin-top: 20px;
+}
+
+footer p {
+    font-size: 14px;
 }
