@@ -3,14 +3,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000; /* Черный фон */
+    background-image: url('assets/background.jpg'); /* Указываем путь к изображению */
+    background-size: cover; /* Изображение будет растянуто на весь экран */
+    background-position: center; /* Центрируем изображение */
     color: white;
     box-sizing: border-box;
 }
 
 /* Верхнее меню */
 header {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон для меню */
     padding: 20px 0;
     text-align: center;
     position: relative;
@@ -85,7 +87,7 @@ h1 {
 /* Стили для секции "Анкеты" */
 #profiles {
     padding: 50px 0;
-    background-color: #111;
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон для анкет */
     text-align: center;
 }
 
