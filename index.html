@@ -3,83 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Наш сайт с анкетами</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <title>Анкеты людей</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <!-- Логотип -->
-        <img src="assets/logo.png" alt="Логотип сайта" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#profiles">Анкеты</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Список чатов и каналов -->
-    <section id="chats">
-        <h2>Список чатов и каналов</h2>
-        <ul>
-            <li><a href="https://t.me/channel1">Канал 1</a></li>
-            <li><a href="https://t.me/channel2">Канал 2</a></li>
-            <li><a href="https://t.me/chat1">Чат 1</a></li>
-            <li><a href="https://t.me/chat2">Чат 2</a></li>
-        </ul>
+    <section id="home" class="section">
+        <h1>Добро пожаловать на наш сайт!</h1>
+        <p>Здесь вы можете найти анкеты людей.</p>
     </section>
 
-    <!-- Анкеты -->
-    <section id="profiles">
+    <section id="profiles" class="section">
         <h2>Анкеты</h2>
-        <div class="profile-container">
+        <div class="profiles">
             <div class="profile-card">
-                <img src="assets/photo1.jpg" alt="Фото 1">
-                <div class="profile-info">
-                    <h3>Иван Иванов</h3>
-                    <p>Возраст: 30</p>
-                    <p>Город: Москва</p>
-                    <a href="https://t.me/ivan_ivanov" class="telegram-btn">Связаться в Telegram</a>
-                    <p>Номер: +7 999 123 45 67</p>
-                </div>
+                <img src="assets/profile1.jpg" alt="User 1">
+                <h3>Иван Иванов</h3>
+                <p>Возраст: 25</p>
+                <p>Город: Москва</p>
             </div>
             <div class="profile-card">
-                <img src="assets/photo2.jpg" alt="Фото 2">
-                <div class="profile-info">
-                    <h3>Мария Петрова</h3>
-                    <p>Возраст: 28</p>
-                    <p>Город: Санкт-Петербург</p>
-                    <a href="https://t.me/maria_pet" class="telegram-btn">Связаться в Telegram</a>
-                    <p>Номер: +7 999 234 56 78</p>
-                </div>
+                <img src="assets/profile2.jpg" alt="User 2">
+                <h3>Анна Смирнова</h3>
+                <p>Возраст: 30</p>
+                <p>Город: Санкт-Петербург</p>
             </div>
-            <div class="profile-card">
-                <img src="assets/photo3.jpg" alt="Фото 3">
-                <div class="profile-info">
-                    <h3>Петр Смирнов</h3>
-                    <p>Возраст: 25</p>
-                    <p>Город: Новосибирск</p>
-                    <a href="https://t.me/petr_smirnov" class="telegram-btn">Связаться в Telegram</a>
-                    <p>Номер: +7 999 345 67 89</p>
-                </div>
-            </div>
-            <div class="profile-card">
-                <img src="assets/photo4.jpg" alt="Фото 4">
-                <div class="profile-info">
-                    <h3>Ольга Васильева</h3>
-                    <p>Возраст: 32</p>
-                    <p>Город: Екатеринбург</p>
-                    <a href="https://t.me/olga_vas" class="telegram-btn">Связаться в Telegram</a>
-                    <p>Номер: +7 999 456 78 90</p>
-                </div>
-            </div>
+            <!-- Добавьте больше анкет -->
         </div>
     </section>
 
-    <!-- Связь с нами -->
-    <section id="contact">
-        <h2>Связь с нами</h2>
-        <p>Свяжитесь с нами через <a href="https://t.me/our_site_support">Телеграм</a>.</p>
+    <section id="contact" class="section">
+        <h2>Контакты</h2>
+        <p>Email: example@example.com</p>
     </section>
 
     <footer>
-        <p>&copy; 2024 Наш сайт. Все права защищены.</p>
+        <p>&copy; 2024 Анкеты людей</p>
     </footer>
-
-    <script src="assets/script.js"></script>
 </body>
 </html>
