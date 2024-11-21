@@ -15,7 +15,7 @@ header {
 
 /* Логотип */
 .logo {
-    width: 100px; /* Уменьшил размер логотипа */
+    width: 50px; /* Размер логотипа уменьшен */
     height: auto;
 }
 
@@ -100,6 +100,10 @@ header {
 /* Стили для футера */
 footer {
     background-color: #222;
+    padding: 20px 0;
+    text-align: center;
+}
+
     padding: 20px 0;
     text-align: center;
 }
